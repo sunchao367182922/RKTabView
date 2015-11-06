@@ -345,7 +345,7 @@
             darkerBackgroundView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
             [tab addSubview:darkerBackgroundView];
         }
-        
+        tab.layer.masksToBounds = YES;
         //setup
         [self setTabContent:tab withTabItem:tabItem];
     }
